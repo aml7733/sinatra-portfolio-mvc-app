@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 20170116205619) do
   create_table "boats", force: :cascade do |t|
     t.string  "name"
     t.integer "num_seats"
-    t.integer "boat_weight"
-    t.integer "current_weight"
+    t.integer "weight"
     t.integer "coach_id"
   end
 
