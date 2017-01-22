@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170116205619) do
 
   create_table "coaches", force: :cascade do |t|
     t.string "name"
+    t.string "password_digest"
     t.string "club_name"
   end
 
