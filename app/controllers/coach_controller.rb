@@ -1,6 +1,7 @@
-require 'pry'
+require_relative '../../config/environment'
 
-class CoachController < ApplicationController
+class CoachController < Sinatra::Base
+
   get '/coaches/signup' do
     erb :'coaches/signup'
   end
@@ -8,5 +9,9 @@ class CoachController < ApplicationController
   post '/coaches/signup' do
     binding.pry
     @coach = Coach.create(params[coach])
+  end
+
+  get '/coaches/login' do
+    erb :'/coaches/login'
   end
 end

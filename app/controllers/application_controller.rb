@@ -1,3 +1,5 @@
+require_relative '../../config/environment'
+
 class ApplicationController < Sinatra::Base
   configure do
     enable :sessions
@@ -9,5 +11,5 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  
+
 end
